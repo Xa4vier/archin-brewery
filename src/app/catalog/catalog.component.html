@@ -1,0 +1,9 @@
+<app-catalog-search></app-catalog-search>
+
+<div class="catalog_container">
+
+    <ng-container *ngFor="let brewery of breweries">
+        <app-catalog-card [brewery]="brewery"></app-catalog-card>
+    </ng-container>
+
+</div>

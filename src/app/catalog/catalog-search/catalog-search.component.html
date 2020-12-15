@@ -1,0 +1,8 @@
+
+<h3>zoek functie</h3>
+
+<form [formGroup]="searchForm">
+    
+  <input type="text" class="form-control" id="name" aria-describedby="brewery name" placeholder="vul een brouwerij naam in" formControlName="searchQuery">
+  <button class="btn btn-info" (click)="onSubmit()" [disabled]="!searchForm.valid">zoek</button>
+</form>

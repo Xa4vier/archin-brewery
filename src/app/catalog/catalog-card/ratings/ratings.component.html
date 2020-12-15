@@ -1,0 +1,15 @@
+<div class="rating__container" *ngIf="rating == 0">
+    <i class="fas fa-star" (click)="onSetRating(1)"></i>
+    <i class="fas fa-star" (click)="onSetRating(2)"></i>
+    <i class="fas fa-star" (click)="onSetRating(3)"></i>
+    <i class="fas fa-star" (click)="onSetRating(4)"></i>
+    <i class="fas fa-star" (click)="onSetRating(5)"></i>
+  </div>
+
+  <div class="rating__container" *ngIf="rating > 0">
+    <i class="fas fa-star" [style.color]="rating >= 1 ? 'green' : 'red' "></i>
+    <i class="fas fa-star" [style.color]="rating >= 2 ? 'green' : 'red' "></i>
+    <i class="fas fa-star" [style.color]="rating >= 3 ? 'green' : 'red' "></i>
+    <i class="fas fa-star" [style.color]="rating >= 4 ? 'green' : 'red' "></i>
+    <i class="fas fa-star" [style.color]="rating >= 5 ? 'green' : 'red' "></i>
+  </div>
